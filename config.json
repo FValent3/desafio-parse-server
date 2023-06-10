@@ -1,0 +1,7 @@
+{
+  "appId": "yf6n6HagJ46Q7VrzJMzlPQ1MgAyu4ZsigbJpwVHO",
+  "masterKey": "igtH58aI9sz6iYzgz80dmqY0dsNHKU5GIiSpQrrE",
+  "appName": "desafio-parse-server",
+  "cloud": "./cloud/main",
+  "databaseURI": "mongodb://127.0.0.1:27017/parse"
+}

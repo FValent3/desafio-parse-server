@@ -1,0 +1,45 @@
+{
+    "env": {
+        "node": true,
+        "es6": true
+    },
+    "extends": [
+        "standard",
+        "eslint:recommended"
+    ],
+    "plugins": [
+        "eslint-plugin-import-helpers",
+        "import",
+        "import-helpers",
+        "module-resolver"
+    ],
+    "rules": {
+        "no-console": "off",
+        "no-unused-vars": "off",
+        "module-resolver/use-alias": 2,
+        "import-helpers/order-imports": [
+            "warn",
+            {
+                "newlinesBetween": "always", // new line between groups
+                "groups": [
+                    "module",
+                    "/^@shared/",
+                    [
+                        "parent",
+                        "sibling",
+                        "index"
+                    ]
+                ],
+                "alphabetize": {
+                    "order": "asc",
+                    "ignoreCase": true
+                }
+            }
+        ]
+    },
+    "settings": {
+        "import/resolver": {
+            "babel-module": {}
+        }
+    }
+}
