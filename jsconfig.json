@@ -3,7 +3,7 @@
         "baseUrl": "./src",
         "paths": {
             "@": [
-                "/*"
+                "./*"
             ],
             "config": [
                 "./config"
@@ -11,9 +11,21 @@
             "config/*": [
                 "./config/*"
             ],
+            "routes": [
+                "./routes"
+            ],
+            "routes/*": [
+                "./routes/*"
+            ],
+            "controllers": [
+                "./controllers"
+            ],
+            "controllers/*": [
+                "./controllers/*"
+            ]
         }
     },
     "exclude": [
-        "node_modules"
+        "node_modules",
     ]
 }
