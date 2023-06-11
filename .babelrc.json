@@ -19,7 +19,8 @@
                 "alias": {
                     "@config": "./src/config",
                     "@routes": "./src/routes",
-                    "@controllers": "./src/controllers"
+                    "@controllers": "./src/controllers",
+                    "@models": "./src/models"
                 },
                 "extensions": ".js"
             }
