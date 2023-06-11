@@ -22,6 +22,12 @@
             ],
             "controllers/*": [
                 "./controllers/*"
+            ],
+            "models": [
+                "./models"
+            ],
+            "models/*": [
+                "./models/*"
             ]
         }
     },

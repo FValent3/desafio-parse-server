@@ -8,12 +8,12 @@ const authController = {
       const user = await Parse.User.logIn(email, password)
 
       if (!user) {
-        return res.status(400).json({ error: 'Usuário ou senha inválidos' })
+        return res.status(400).json({ error: 'Invalid email or password' })
       }
 
       return res.status(200).json(user.toJSON())
     } catch (error) {
-      return res.status(500).json({ error: 'Erro interno no servidor', message: error.message })
+      return res.status(500).json({ error: 'Internal server error', message: error.message })
     }
   }
 }
